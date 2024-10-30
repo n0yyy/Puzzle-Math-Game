@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puzzle Math Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>🧩 Puzzle Math Game 🧮</h1>
+
+    <button id="startBtn">Start Game</button>
+
+    <div id="question" style="display: none;"></div>
+    <input type="number" id="answer" placeholder="Your answer..." style="display: none;" />
+    <button id="submitBtn" style="display: none;">Submit</button>
+
+    <div class="feedback" id="feedback"></div>
+    <div class="score">Score: <span id="score">0</span></div>
+    <div class="timer">Time Left: <span id="timer">30</span> sec</div>
+  </div>
+
+  <!-- Suspense Sound -->
+  <audio id="suspenseAudio" loop>
+    <source src="suspenseful-music-27581.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <!-- Time-Over Sound -->
+  <audio id="timeOverAudio">
+    <source src="080047_lose_funny_retro_video-game-80925.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <!-- Button Click Sound -->
+  <audio id="buttonClickAudio">
+    <source src="mouse-click-117076.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
